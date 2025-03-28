@@ -1,27 +1,80 @@
-# MyFirst
+# 📌 Exercício Angular - Gerenciador de Tarefas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+Bem-vindo ao **Exercício Angular**! Este projeto foi desenvolvido para praticar conceitos do Angular 17 utilizando **Componentes Standalone** e **Módulos**.
 
-## Development server
+## 🛠️ Pré-requisitos
+Antes de executar o projeto, certifique-se de ter instalado:
+- **Node.js** (versão recomendada: 18 ou superior)
+- **Angular CLI** (versão 17):
+  ```bash
+  npm install -g @angular/cli@17
+  ```
+- **JSON Server** (para simular uma API REST):
+  ```bash
+  npm install -g json-server
+  ```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Como Rodar o Projeto
 
-## Code scaffolding
+1️⃣ **Clone o repositório:**
+```bash
+git clone https://github.com/GabrielRogerioMessias/angular-exercise.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2️⃣ **Acesse a pasta do projeto:**
+```bash
+cd angular-exercise
+```
 
-## Build
+3️⃣ **Instale as dependências:**
+```bash
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4️⃣ **Inicie a aplicação Angular:**
+```bash
+ng serve
+```
 
-## Running unit tests
+5️⃣ **Inicie o servidor JSON (banco de dados fake):**
+Abra outro terminal, navegue até a pasta `src/db` e execute:
+```bash
+json-server --watch db.json
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Agora, o servidor estará rodando e pronto para armazenar suas tarefas! ✅
 
-## Running end-to-end tests
+## ✨ Funcionalidades
+✅ Listar todas as tarefas cadastradas  
+✅ Criar novas tarefas  
+✅ Uso do **Snackbar** para fornecer feedback ao usuário  
+✅ **Validação de formulário** para garantir que os campos obrigatórios sejam preenchidos  
+✅ Implementação de **Botões, Toolbar, Inputs, Model e Service**  
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+⚠ **Mensagem de Validação:** Caso os campos obrigatórios não sejam preenchidos ao criar uma nova tarefa, uma mensagem de aviso no Snackbar será exibida: **"Por favor, preencha todos os campos obrigatórios antes de continuar!"**
 
-## Further help
+## 📂 Estrutura do Projeto
+```
+angular-exercise/
+│── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── models/
+│   │   ├── services/
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   ├── db/
+│   │   ├── db.json (banco de dados fake)
+│   ├── index.html
+│   ├── main.ts
+│── package.json
+│── angular.json
+│── README.md
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📝 Notas
+Este é um projeto simples, com foco principal em **aprender e praticar Angular** usando Componentes Standalone e Módulos. Fique à vontade para contribuir ou tirar dúvidas! 😃
+
+---
+🔗 **Criado por:** [Gabriel Rogério Messias](https://github.com/GabrielRogerioMessias) e [Anna Laura Da Costa Polo] (https://github.com/annalauracosta)
+
