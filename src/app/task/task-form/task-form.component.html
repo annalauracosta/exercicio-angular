@@ -1,0 +1,47 @@
+<div [formGroup]="formGroup">
+  <mat-card>
+    <mat-card-header>Registrar Tarefa</mat-card-header>
+    <mat-form-field>
+      <mat-label>Descrição</mat-label>
+      <input
+        matInput
+        placeholder="digite a descrição"
+        formControlName="description"
+        name="description"
+        required
+      />
+      <mat-error *ngIf="formGroup.get('description')?.invalid"
+        >Campo obrigatório!</mat-error
+      >
+    </mat-form-field>
+
+    <mat-label style="color: rebeccapurple">Category</mat-label>
+    <mat-radio-group formControlName="category" required>
+      <mat-radio-button *ngFor="let item of categories" [value]="item">
+        {{ item }}
+      </mat-radio-button>
+    </mat-radio-group>
+    <p class="error-text" *ngIf="formGroup.get('category')?.invalid">
+      Campo obrigatório!
+    </p>
+    <mat-form-field [class.error]="formGroup.get('situation')?.invalid">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="situation" required>
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{ option ? "Completa" : "Pendente" }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button
+      mat-button
+      color="blue"
+      (click)="createTask('Task Add Successfully')"
+    >
+      Registrar
+    </button>
+    <button mat-button color="warn" (click)="cancel()">
+      Cancelar Registro
+    </button>
+  </mat-card>
+</div>

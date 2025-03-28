@@ -1,0 +1,38 @@
+mat-card{
+  width: 45%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  align-items: center;
+  display: flex;
+  height: 80%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+mat-form-field{
+  width: 50%;
+}
+mat-card-header{
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+.error-snackbar {
+  background-color: red;
+  color: white;
+}

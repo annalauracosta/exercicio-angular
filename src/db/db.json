@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": "f329",
+      "description": "Andar de Bicicleta",
+      "situation": false,
+      "category": "Sports"
+    },
+    {
+      "id": "4356",
+      "description": "Ir as compras",
+      "situation": true,
+      "category": "Shopping"
+    }
+  ]
+}
